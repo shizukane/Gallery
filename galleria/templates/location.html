@@ -1,0 +1,35 @@
+{% extends 'base.html' %}
+{% block content %}
+{{block.super}}
+<div class="container" style="padding-left: 75px;">
+
+  <div style="font-family: 'Shadows Into Light', cursive; text-decoration: underline;">
+    <img src="https://i.pinimg.com/originals/0b/50/30/0b5030fa1af3490323a23a71d3b89839.png" style="width: 12%; border: none"; height="12%; margin-right: 2%">
+    <h1>DAROLLE'S GALLERIA</h1>
+  </div>
+
+  <hr>
+
+  <div class="row">
+
+  {% if images %}
+    {% for image in images %}
+    <div class="card-deck">
+        <div class="col-xs-12 col-md-4 column">
+          <div class="card" style="width: 20rem;">
+            <h3 class="text-center" style="font-family: 'Shadows Into Light', cursive;">{{image.img_name}}</h3>
+            <img class="card-img-top" src="{{image.img_path.url}}" alt=" ">
+            <div class="card-body">
+                <h5>Location: {{image.img_location}}</h5>
+                <p class="card-text"><strong>Description:</strong>{{image.img_desc}}</p>
+                <a href="{% url 'single_image' image.id %}" id='copy'> <button type="button" class="btn btn-outline-info">View image details</button></a>
+            </div>
+          </div>
+          <br>
+        </div>
+      </div>
+    {% endfor %}
+  {% endif %}
+    </div>
+  </div>
+  {% endblock %}

@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+{% block content %}
+{{block.super}}
+<div class="container" style="padding-left: 110px;">
+    <div class="row">
+        <div class="col-md-3"></div>
+        <div class="col-md-6">
+            <img src="{{image.img_path.url}}" class="img-responsive">
+            <br>
+                <div class="card border-info mb-3" style="max-width: 18rem;">
+                    <div class="card-header"><h3>{{image.img_name}}</h3></div>
+                    <div class="card-body text-info">
+                      <h6 class="card-title"> <strong>Category:</strong>{{image.img_category}}</h6>
+                      <h6 class="card-title"> <strong>Location:</strong>{{image.img_location}}</h6>
+                      <h5 class="card-text">{{image.img_desc}}</h5>
+                      <br>
+                      <input type="text" value="https://darollesgalleria.herokuapp.com{{image.img_path.url}}" id="myInput"><br>
+                      <button class="btn btn-outline-dark" onclick="myFunction()">Copy Url</button>
+                    </div>
+                </div>
+            <br>
+        </div>
+        <div class="col-md-3"></div>
+    </div>
+</div>
+{% endblock %}
