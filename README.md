@@ -22,7 +22,7 @@ Find deployment instructions to heroku here : https://gist.github.com/newtonkira
 
 ## Authors
 
- [**JoaNe**](https://github.com/shizukane)
+ [**Joae**](https://github.com/shizukane)
 
 
 ## License
