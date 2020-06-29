@@ -16,7 +16,7 @@ Set up a .env file and populate it with environment variables
 
 
 ## Deployment
-Run the project locally by typing the following in the Ubuntu CLI: python3.7 manage.py runserver
+Run the project locally by typing the following in the Ubuntu CLI: python3. manage.py runserver
 Find deployment instructions to heroku here : https://gist.github.com/newtonkiragu/42f2500e56d9c2375a087233587eddd0
  
 
