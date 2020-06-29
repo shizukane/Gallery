@@ -1,4 +1,4 @@
-# Gallery
+# Galler
 
 A personal gallery where I showcase photos to the world. Users have the option of copying photo links to view separately.
 
