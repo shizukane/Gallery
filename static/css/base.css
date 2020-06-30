@@ -7,3 +7,10 @@ body{
 .container{
     padding-left: 30px;
 }
+img{
+    width: 200px;
+    height: 200px;
+}
+.form-inline{
+    display: inline;
+}
