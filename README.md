@@ -14,6 +14,9 @@ A personal gallery where I showcase photos to the world. Users have the option o
 ### Installing
 Set up a .env file and populate it with environment variables
 
+## Code Beat
+[![codebeat badge](https://codebeat.co/badges/ae83f2be-c6df-481d-8fa4-e84e3c790cbf)](https://codebeat.co/projects/github-com-shizukane-gallery-master)
+
 
 ## Deployment
 Run the project locally by typing the following in the Ubuntu CLI: python3.6 manage.py runserver
